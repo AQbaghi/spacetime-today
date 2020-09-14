@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container-fluid">
+    <nav></nav>
+    <h2 id="header">spacetime today</h2>
+    <div class="container">
+      <p id="label">What was discovered on your birthday:</p>
       <form class="nasa-search-form input-group mb-3">
         <input
           type="date"
@@ -30,14 +33,16 @@
           </button>
         </div>
       </form>
-
-      <section class="card-list">
-        <!-- Add more cards here -->
-      </section>
     </div>
-    <div class="details container"></div>
 
-    <script src="/nasa.js"></script>
+    <p id="card-title">This Weeks NASA discovery:</p>
+    <section class="card-list">
+      <!-- Add more cards here -->
+    </section>
+
+    <div class="parent-details"></div>
+
+    <script src="nasa.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
